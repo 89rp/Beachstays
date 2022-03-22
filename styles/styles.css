@@ -1009,9 +1009,6 @@ footer p {
   }
 }
 @media (max-width: 1050px) {
-  .mainHeader {
-    height: 100vh;
-  }
   .mainHeader .textContainer {
     width: 100%;
     position: relative;
@@ -1026,6 +1023,11 @@ footer p {
     display: none;
   }
 
+  .mainHeader,
+.blogHeader,
+.contactHeader {
+    height: 600px;
+  }
   .mainHeader .wrapper .hamburger,
 .blogHeader .wrapper .hamburger,
 .contactHeader .wrapper .hamburger {

@@ -24,7 +24,6 @@
 
 @media (max-width: 1050px) {
     .mainHeader {
-        height: 100vh;
 
         .textContainer {
             width: 100%;
@@ -60,6 +59,8 @@
     .mainHeader, 
     .blogHeader, 
     .contactHeader {
+
+        height: 600px;
 
         .wrapper {
             .hamburger {

@@ -48,19 +48,6 @@
 
         height: 600px;
 
-        // .wrapper {
-        //     .hamburger {
-        //         display: flex;
-        //         flex-direction: column;
-        //         justify-content: center;
-        //     }
-            
-        //     nav {
-        //         ul {
-        //             display: none
-        //         }
-        //     }
-        // }
     }
 
 
@@ -328,6 +315,7 @@
     .contactHeader {
         h1 {
             @include fontSize(67);
+            top: 160px;
         }
     }
 

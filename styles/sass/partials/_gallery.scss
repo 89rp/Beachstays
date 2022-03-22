@@ -1,0 +1,22 @@
+.gallery {
+
+    background-color: $lightLightBlue;
+    padding: 75px 0;
+    margin-bottom: 125px;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        line-height: 0;
+
+        li{
+            width: 32%;
+        }
+        
+        img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+    }
+}

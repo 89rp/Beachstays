@@ -1,0 +1,29 @@
+.mainHeader {
+    background: url(../project-1-beach-stay/beach-final-images/home-image-1.jpg) center;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    span {
+        display: block;
+        margin: 25px 0;
+    }
+
+    .textContainer {
+        width: 80%;
+        position: relative;
+        top: 300px;
+        right: -325px;
+        z-index: 1;
+        }
+
+    .imageContainer {
+        width: 50%;
+        max-width: 600px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+}

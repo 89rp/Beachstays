@@ -1,0 +1,446 @@
+// Initial
+@media (max-width: 1250px) {
+    .mainHeader {
+        .textContainer {
+            h1 {
+                @include fontSize(55);
+            }
+            span {
+                @include fontSize(83);
+                margin: 0;
+            }
+        }
+
+        .imageContainer {
+            position: relative;
+            top: 35px;
+        }
+    }
+
+    .crissCross .newLocations .imageContainer {
+        bottom: -80px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .mainHeader {
+        height: 100vh;
+
+        .textContainer {
+            width: 100%;
+            position: relative;
+            top: 250px;
+            right: 0;
+            text-align: center;
+
+            span {
+                width: 100%;
+            }
+        }
+
+        .imageContainer {
+            display: none;
+        }
+
+        // .wrapper {
+        //     .hamburger {
+        //         display: flex;
+        //         flex-direction: column;
+        //         justify-content: center;
+        //     }
+
+        //     nav {
+        //         ul {
+        //             display: none
+        //         }
+        //     }
+        // }
+    }
+
+    .mainHeader, 
+    .blogHeader, 
+    .contactHeader {
+
+        .wrapper {
+            .hamburger {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            nav {
+                ul {
+                    display: none
+                }
+            }
+        }
+    }
+
+
+    nav {
+        p {
+            @include fontSize(25);
+        }
+    }
+
+    .about {
+        margin: 100px 0px;
+
+        .flexContainer {
+            flex-direction: column-reverse;
+
+            .imageContainer {
+                width: 35%;
+                margin-bottom: 20px;
+            }
+
+            .textContainer {
+                width: 100%;
+                text-align: center;
+
+                p {
+                    margin: 35px 0px;
+                }
+            }
+        }
+    }
+
+    .gallery {
+        padding: 50px 0;
+        margin-bottom: 75px;
+
+        ul {
+            justify-content: space-around;
+
+            li:nth-of-type(2) {
+                display: none;
+            }
+
+            li {
+                width: 45%;
+            }
+        }
+    }
+
+    .info {
+        .flexContainer {
+            flex-direction: column;
+
+            .beachHouses,
+            .community,
+            .blog,
+            .getInTouch {
+                width: 100%;
+                margin-left: 40px;
+            }
+
+            .icon {
+                position: relative;
+                right: 40px;
+                top: 40px;
+            }
+        }
+    }
+
+    .crissCross {
+        padding: 0;
+
+        .planAhead {
+            .flexContainer {
+                flex-direction: column;
+
+                .textContainer {
+                    width: 70%;
+                    text-align: center;
+                    padding: 0;
+                    margin: 75px 0;
+                }
+
+                .imageContainer {
+                    width: 100%;
+                    top: 0;
+
+                    img {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+
+        .newLocations {
+            .flexContainer {
+                flex-direction: column;
+
+                .textContainer {
+                    width: 70%;
+                    text-align: center;
+                    padding: 0;
+                    margin: 75px 0;
+                }
+
+                .imageContainer {
+                    width: 100%;
+                    bottom: 0;
+
+                    img {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .contest {
+        .flexContainer {
+            padding: 100px 100px;
+
+            p {
+                margin: 40px 0px;
+            }
+        }
+    }
+
+    .blogHeader {
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .blogPost {
+        width: 100%;
+        padding: 0;
+        border: none;
+        top: 50px;
+        margin-bottom: 120px;
+
+        .textContainer {
+            left: 0;
+        }
+
+        .imageContainer {
+            width: 100%;
+
+            img {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .commentSection,
+    .addComment {
+        .flexContainer {
+            width: 100%;
+        }
+    }
+
+    .sideBar {
+        position: static;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 30px 0px;
+
+        h3 {
+            margin-top: 0;
+        }
+
+        .ourMission,
+        .recentPosts {
+            width: 40%;
+        }
+
+        .imageContainer {
+            display: none;
+        }
+    }
+
+    .commentForm {
+        .flexContainer2 {
+            flex-direction: column;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+        }
+    }
+
+    .contactHeader {
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .contactUs {
+        .flexContainer {
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .flexContainer2 {
+            flex-direction: column;
+
+            input[type="text"],
+            input[type="email"] {
+                width: 100%;
+            }
+        }
+
+        .contactForm {
+            width: 100%;
+        }
+
+        .contactInfo {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .mainHeader {
+        .textContainer {
+            h1 {
+                @include fontSize(35);
+            }
+            span {
+                @include fontSize(65);
+                margin: 0;
+            }
+        }
+    }
+
+    .contest {
+        .flexContainer {
+            padding: 100px 50px;
+        }
+    }
+
+    .contactHeader {
+        h1 {
+            @include fontSize(67);
+        }
+    }
+
+    .wrapper {
+        .contactForm {
+            padding: 50px 50px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .mainHeader {
+        .textContainer {
+            h1 {
+                @include fontSize(35);
+            }
+            span {
+                @include fontSize(45);
+                margin: 0;
+            }
+        }
+    }
+
+    .about {
+        .flexContainer {
+            .imageContainer {
+                width: 50%;
+            }
+        }
+    }
+
+    .gallery {
+        padding: 25px 0px;
+
+        ul {
+            flex-direction: column;
+
+            li {
+                width: 100%;
+                margin: 15px 0px;
+            }
+        }
+    }
+
+    .sideBar {
+        .recentPosts {
+            ul {
+                padding-left: 10px;
+            }
+        }
+    }
+
+    .blogPost {
+        h2 {
+            @include fontSize(28);
+        }
+        .date {
+            @include fontSize(16);
+        }
+    }
+
+    .commentSection {
+        .flexContainer {
+            .imageContainer {
+                img {
+                    width: 60px;
+                }
+            }
+        }
+    }
+
+    .contactUs {
+        .wrapper {
+            .contactForm {
+                padding: 35px 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .mainHeader {
+        .textContainer {
+            h1 {
+                @include fontSize(30);
+            }
+            span {
+                @include fontSize(35);
+                margin: 0;
+            }
+        }
+    }
+
+    nav {
+        p {
+            @include fontSize(20);
+        }
+    }
+
+    .info {
+        .flexContainer {
+            .icon {
+                display: none;
+            }
+
+            .beachHouses,
+            .community,
+            .blog,
+            .getInTouch {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .sideBar {
+        .recentPosts {
+            ul {
+                li {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

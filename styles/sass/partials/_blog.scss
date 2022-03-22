@@ -1,0 +1,182 @@
+.blogHeader {
+    // width: 100%;
+    height: 65vh;
+    background: url(../project-1-beach-stay/beach-final-images/blog-image-1.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        position: relative;
+        top: 200px;
+        margin: 0;
+    }
+}
+
+.sideBar {
+    width: 25%;
+    position: absolute;
+    right: 0;
+    top: 800px;
+    
+    .imageContainer {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h3 {
+        color: $twilightBlue
+    }
+
+    p {
+        margin: 0;
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            color: $spruce;
+            font-weight: $bold;
+
+            &:hover, &:focus{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .recentPosts {
+        
+        ul {
+            list-style-type: disc;
+            padding-left: 30px;
+
+            li {
+                padding-left: 15px;
+
+                &::marker {
+                    color: $greenishCyan;
+                }
+            }
+
+        }
+    }
+
+}
+
+.blogPost {
+    width: 60%;
+    position: relative;
+    top: -170px;
+    margin-bottom: -150px;
+    margin-right: 0px;
+    padding: 0 15px 25px 0;
+    border-right: 5px solid $greenishCyan;
+    border-bottom: 5px solid $greenishCyan;
+
+    h2 {
+        margin-bottom: 0;
+        // .blogPost h2 styling in typography partial
+    }
+    
+    .date {
+        margin: 0;
+        color: $twilightBlue;
+    }
+    .imageContainer {
+        width: 100%;
+        position: relative;
+        top: -50px;
+
+        img {
+            width: 100%;
+            box-shadow: 20px 20px 0px $greenishCyan;
+        }
+    }
+
+    .textContainer {
+        width: 100%;
+        position: relative;
+        left: 40px;
+    }
+}
+
+
+.commentSection {
+    h4 {
+        color: $black;
+    }
+
+    .flexContainer {
+        display: flex;
+        width: 60%;
+        margin: 40px 0 80px 0;
+
+        .imageContainer {
+            margin-right: 25px;
+            position: relative;
+            top: 5px;
+
+            img {
+                width: 90px;
+            }
+        }
+
+        .textContainer {
+            h5 {
+                margin: 0 0 5px 0;
+                color: $twilightBlue;
+            }
+
+            p {
+                margin: 0 0 5px 0;
+            }
+        }
+    }
+}
+
+.addComment {
+
+    margin-bottom: 150px;
+
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 60%;
+    }
+
+    .flexContainer2 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        font-family: inherit;
+        border-style: none;
+        border-bottom: 2px solid $greenishCyan;
+        width: 45%;
+        height: 75px;
+        margin-bottom: 30px;
+        padding-left: 24px;
+
+        &::placeholder {
+            @include font($lato, $light, $black);
+            @include lineLetter(32px, 2px);
+            // text-align: center;
+        }
+    }
+
+    textarea {
+        border: 2px solid $greenishCyan;
+        resize: none;
+        padding: 30px 0 0 30px;
+        margin-bottom: 30px;
+
+        &::placeholder {
+            @include font($lato, $light, $black);
+            @include lineLetter(32px, 2px);
+        }
+    }
+}

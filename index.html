@@ -5,30 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/9519f6733b.js" crossorigin="anonymous"></script>
-    <title>BEACHSTAYS</title>
+    <title>Home ~ BEACHSTAYS</title>
 </head>
 
 <body>
 
-    <header>
-
-        <nav>
-            <div class="wrapper">
+    <header class="mainHeader">
+        <div class="wrapper">
+            <nav>
                 <p>BEACHSTAYS</p>
                 <ul>
-                    <li><a href="#home">HOME</a></li>
+                    <li><a href="./index.html">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#blog">BLOG</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
                 </ul>
-            </div>
-            <!--.wrapper END-->
-        </nav>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
 
-        <div class="textContainer">
-            <h1>welcome to <span>BEACHSTAYS</span></h1>
+            <div class="textContainer">
+                <h1>welcome to</h1>
+                <span>Beachstays</span>
+            </div>
         </div>
+        <!--.wrapper END-->
         <div class="imageContainer">
             <img src="./project-1-beach-stay/beach-final-images/header-box.jpg"
                 alt="Sunglasses sitting in the sand on the beach.">
@@ -37,7 +46,7 @@
     </header>
 
     <main>
-        <section class="visit">
+        <section class="about" id="about">
             <div class="wrapper">
                 <div class="flexContainer">
                     <div class="textContainer">
@@ -49,12 +58,12 @@
                             obcaecati maxime enim provident placeat hic, saepe pariatur. Distinctio eligendi minus,
                             facilis rerum omnis a provident.
                         </p>
-                        <button>FIND OUT MORE</button>
+                        <button>Find Out More</button>
                     </div>
                     <!--.textContainer END-->
                     <div class="imageContainer">
                         <img src="./project-1-beach-stay/beach-final-images/small-box.jpg"
-                            alt="a hotel room with a lamp, furniture and a view of the water.">
+                            alt="a beach house room with a lamp, furniture and a view of the water.">
                     </div>
                     <!--.imageContainer END-->
                 </div>
@@ -67,11 +76,11 @@
             <div class="wrapper">
                 <ul>
                     <li><img src="./project-1-beach-stay/beach-final-images/gallery-image1.jpg"
-                            alt="A view of the hotel by the water with forestry in the background."></li>
+                            alt="A view of the beach house by the water with forestry in the background."></li>
                     <li><img src="./project-1-beach-stay/beach-final-images/gallery-image2.jpg"
-                            alt="A bridge leading to the side of the hotel."></li>
+                            alt="A bridge leading to the side of the beach."></li>
                     <li><img src="./project-1-beach-stay/beach-final-images/gallery-image3.jpg"
-                            alt="A 2 storey hoetl on the beach surrounded by palm trees."></li>
+                            alt="A 2 storey hotel on the beach surrounded by palm trees."></li>
                 </ul>
             </div>
         </section>
@@ -79,92 +88,91 @@
         <section class="info">
             <div class="wrapper">
 
-                <!--
-                    <i class="fa-solid fa-house-chimney"></i>
-                    <i class="fa-solid fa-user-group"></i>
-                    <i class="fa-solid fa-note"></i>
-                    <i class="fa-solid fa-phone-flip"></i>
-
-                -->
-
-
-                <div class="flexContainer1">
+                <div class="flexContainer">
+                    <div class="icon">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
                     <div class="beachHouses">
                         <h4>Beach houses</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nam accusamus expedita
                             eligendi
-                            perspiciatis itaque natus facilis, excepturi fugit quia, numquam odio ut error! Deserunt
-                            ipsa
-                            voluptates quibusdam officiis explicabo!</p>
+                            perspiciatis itaque natus facilis, excepturi fugit quia, numquam odio ut error!</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-users"></i>
                     </div>
                     <div class="community">
                         <h4>Community</h4>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut modi sed deleniti delectus
                             voluptates voluptas tempora vitae unde qui, vel eveniet similique quisquam dignissimos
-                            magnam
-                            assumenda at a, recusandae velit.</p>
+                            magnam.</p>
                     </div>
                 </div>
-                <!--.flexContainer1 END-->
+                <!--.flexContainer END-->
 
-                <div class="flexContainer2">
+                <div class="flexContainer">
+                    <div class="icon">
+                        <i class="fa-solid fa-blog"></i>
+                    </div>
                     <div class="blog">
                         <h4>Blog</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nam accusamus expedita
                             eligendi
-                            perspiciatis itaque natus facilis, excepturi fugit quia, numquam odio ut error! Deserunt
-                            ipsa
-                            voluptates quibusdam officiis explicabo!</p>
+                            perspiciatis itaque natus facilis, excepturi fugit quia, numquam odio ut error! </p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-phone-flip"></i>
                     </div>
                     <div class="getInTouch">
                         <h4>Get in Touch</h4>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut modi sed deleniti delectus
-                            voluptatesvoluptas tempora vitae unde qui, vel eveniet similique quisquam dignissimos magnam
-                            assumenda at a, recusandae velit.</p>
+                            voluptatesvoluptas tempora vitae unde qui, vel eveniet similique quisquam dignissimos
+                            magnam.</p>
                     </div>
                 </div>
-                <!--.flexContainer2-->
+                <!--.flexContainer-->
 
             </div>
             <!--.wrapper END-->
         </section>
 
-        <section class="planAhead">
-            <div class="flexContainer">
-                <div class="imageContainer">
-                    <img src="./project-1-beach-stay/beach-final-images/left-image.jpg"
-                        alt="A low angle view looking up at the hotel.">
+        <section class="crissCross">
+            <div class="planAhead">
+                <div class="flexContainer">
+                    <div class="imageContainer">
+                        <img src="./project-1-beach-stay/beach-final-images/left-image.jpg"
+                            alt="A low angle view looking up at the hotel.">
+                    </div>
+                    <!--.imageContainer End-->
+                    <div class="textContainer">
+                        <h3>Plan ahead</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ut aperiam, nostrum
+                            iste rerum at explicabo sit exercitationem, dolores placeat inventore.</p>
+                        <button>Read More</button>
+                    </div>
+                    <!--.textContainer END-->
                 </div>
-                <!--.imageContainer End-->
-                <div class="textContainer">
-                    <h3>Plan ahead</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ut aperiam, nostrum iste
-                        rerum at explicabo sit exercitationem, dolores necessitatibus nulla placeat inventore quae
-                        sequi. Tempora quidem voluptatum veritatis mollitia!</p>
-                    <button>READ MORE</button>
-                </div>
-                <!--.textContainer END-->
+                <!--.flexContainer END-->
             </div>
-            <!--.flexContainer END-->
-        </section>
-
-        <section class="newLocations">
-            <div class="flexContainer">
-                <div class="imageContainer">
-                    <img src="./project-1-beach-stay/beach-final-images/right-image.jpg"
-                        alt="A low angle view looking up at the hotel.">
+            <div class="newLocations">
+                <div class="flexContainer">
+                    <div class="imageContainer">
+                        <img src="./project-1-beach-stay/beach-final-images/right-image.jpg"
+                            alt="A low angle view looking up at the beach house.">
+                    </div>
+                    <!--.imageContainer End-->
+                    <div class="textContainer">
+                        <h3>New locations</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ut aperiam, nostrum
+                            iste
+                            rerum at explicabo sit exercitationem, dolores necessitatibus nulla.</p>
+                        <button>Read More</button>
+                    </div>
+                    <!--.textContainer END-->
                 </div>
-                <!--.imageContainer End-->
-                <div class="textContainer">
-                    <h3>New locations</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ut aperiam, nostrum iste
-                        rerum at explicabo sit exercitationem, dolores necessitatibus nulla placeat inventore quae
-                        sequi. Tempora quidem voluptatum veritatis mollitia!</p>
-                    <button>READ MORE</button>
-                </div>
-                <!--.textContainer END-->
+                <!--.flexContainer END-->
             </div>
-            <!--.flexContainer END-->
+            </div>
         </section>
 
         <div class="beachBanner">
@@ -174,17 +182,16 @@
             <div class="flexContainer">
                 <h3>Free trip with Beachstays</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, obcaecati quibusdam eaque dignissimos
-                    aliquam asperiores laborum consequuntur velit esse temporibus earum unde eveniet ex dicta excepturi
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, obcaecati quibusdam eaque
+                    dignissimos
+                    aliquam asperiores laborum consequuntur velit esse temporibus earum unde eveniet ex dicta
+                    excepturi
                     omnis quo nesciunt saepe.
-                    Omnis veritatis sapiente recusandae explicabo esse totam soluta error eum voluptas veniam blanditiis
-                    earum quod dicta consequatur inventore, ducimus animi accusantium commodi laborum. Error officiis
-                    inventore incidunt voluptas reprehenderit neque.
-                    Minima repudiandae sunt nostrum sit nesciunt unde eius natus pariatur ullam quaerat. Tempore qui
-                    dignissimos officia itaque fuga doloremque fugit rerum, dicta quas dolorem odio inventore odit
-                    architecto explicabo blanditiis?
+                    Omnis veritatis sapiente recusandae explicabo esse totam soluta error eum voluptas veniam
+                    blanditiis
+                    earum quod dicta consequatur inventore, ducimus animi accusantium commodi laborum.
                 </p>
-                <button>FIND OUT MORE</button>
+                <button>Find Out More</button>
             </div>
         </section>
     </main>

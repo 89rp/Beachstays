@@ -1,0 +1,21 @@
+.wrapper {
+    max-width: 1500px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    @include font($playFair, 900, $iceBlue);
+    @include lineLetter (32px, 1px);
+    background-color: $twilightBlue;
+    border: none;
+    padding: 10px 12.5px;
+}
+

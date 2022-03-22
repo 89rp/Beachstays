@@ -1,0 +1,96 @@
+.contactHeader {
+    background: url(../project-1-beach-stay/beach-final-images/contact-image-1.jpg) center;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    h1 {
+        position: relative;
+        top: 250px;
+        margin: 0;
+    }
+}
+
+
+.wrapper {
+    .flexContainer {
+        display: flex;
+        justify-content: space-between;
+
+        .flexContainer2 {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .contactForm {
+        background-color: $iceBlue;
+        width: 65%;
+        padding: 50px 75px;
+        box-shadow: 20px 20px 0px $greenishCyan;
+        position: relative;
+        top: -150px;
+
+        .formFlex {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            font-family: inherit;
+            border-style: none;
+            border-bottom: 2px solid $greenishCyan;
+            width: 48%;
+            height: 75px;
+            margin-bottom: 30px;
+            padding-left: 24px;
+
+            &::placeholder {
+                @include font($lato, $light, $black);
+                @include lineLetter(32px, 2px);
+            }
+        }
+
+        textarea {
+            border: 2px solid $greenishCyan;
+            resize: none;
+            padding: 30px 0 0 30px;
+            margin-bottom: 30px;
+
+            &::placeholder {
+                @include font($lato, $light, $black);
+                @include lineLetter(32px, 2px);
+            }
+        }
+    }
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+
+    .socialIcons {
+        
+        a{
+            text-decoration: none;
+            color: #202044;
+            padding-right: 5px;
+            margin-right: 5px;
+        }
+    }
+
+    .textContainer {
+        
+        p {
+            margin: 0;
+        }
+
+        .email {
+            font-weight: $bold;
+            margin: 15px 0;
+        }
+    }
+}

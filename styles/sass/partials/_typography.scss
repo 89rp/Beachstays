@@ -1,0 +1,117 @@
+// Typography
+// $playFair: 'Playfair Display SC', serif;
+// $lato: 'Lato', sans-serif;
+// $bold: 700;
+// $regular: 400;
+// $light: 300;
+
+// Colours
+
+// $greenishCyan: #50E3C2;
+// $black: #2C2C2C;
+// $iceBlue: #FAFFFE;
+// $twilightBlue: #063974;
+// $lightLightBlue: #D2F9F1;
+// $spruce: #0C5F4C;
+
+
+
+html {
+    font-size: 125%;
+}
+
+body {
+    @include lineLetter (32px, 2px);
+    @include font($lato, $regular, $black);
+}
+
+nav {
+
+    a {
+        @include fontSize(20);
+        @include font($lato, $bold, $iceBlue);
+        @include lineLetter (29px, 1px);
+        text-decoration: none;
+
+        &:hover {
+            color: $greenishCyan;
+        }
+
+        &:focus {
+            color: $greenishCyan;
+        }
+    }
+
+    p{
+        @include fontSize(34.6);
+        @include font($playFair, 900, $greenishCyan);
+    }
+
+}
+
+.mainHeader {
+    
+    h1 {
+
+    @include fontSize(62);
+    @include font($lato, $bold, $spruce);
+    @include lineLetter (58px, 6.7px);
+    
+}
+
+span {
+    @include fontSize(111.7);
+    @include font($playFair, 900, $twilightBlue);
+}
+
+}
+
+.blogHeader, .contactHeader {
+
+    h1 {
+        @include fontSize(87);
+        @include font($lato, $bold, $iceBlue);
+        @include lineLetter (58px, 9px);
+        
+    }
+}
+
+.about, .blogPost {
+    
+    h2 {
+        @include fontSize(35);
+        @include font($lato, $bold, $spruce);
+        @include lineLetter (58px, 3.8px);
+    }
+}
+
+.info, .commentSection {
+    
+    h4 {
+        @include fontSize(30);
+        @include font($lato, $bold, $spruce);
+        @include lineLetter (58px, 3.2px);
+    }
+}
+
+.planAhead, .newLocations {
+
+    h3 {
+        @include fontSize(35);
+        @include font($lato, $bold, $twilightBlue);
+    }
+}
+
+.contest {
+
+    h3 {
+        @include fontSize(35);
+        @include font($lato, $bold, $spruce);
+    }
+}
+
+footer {
+    color: $iceBlue
+}
+
+

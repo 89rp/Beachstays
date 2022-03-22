@@ -338,6 +338,15 @@ footer {
   color: #FAFFFE;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
 .wrapper {
   max-width: 1500px;
   width: 85%;

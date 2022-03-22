@@ -1,9 +1,16 @@
+html,
+body {
+    overflow-x: hidden;
+}
+body {
+    position: relative;
+}
+
 .wrapper {
     max-width: 1500px;
     width: 85%;
     margin: 0 auto;
 }
-
 
 ul {
     list-style: none;
@@ -13,9 +20,8 @@ ul {
 
 button {
     @include font($playFair, 900, $iceBlue);
-    @include lineLetter (32px, 1px);
+    @include lineLetter(32px, 1px);
     background-color: $twilightBlue;
     border: none;
     padding: 10px 12.5px;
 }
-

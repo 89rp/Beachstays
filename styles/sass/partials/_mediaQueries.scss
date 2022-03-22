@@ -292,7 +292,7 @@
                 @include fontSize(35);
             }
             span {
-                @include fontSize(65);
+                @include fontSize(60);
                 margin: 0;
             }
         }
@@ -339,7 +339,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .mainHeader {
         .textContainer {
             h1 {

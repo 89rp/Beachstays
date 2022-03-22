@@ -1241,8 +1241,8 @@ footer p {
     font-size: 1.75rem;
   }
   .mainHeader .textContainer span {
-    font-size: 65px;
-    font-size: 3.25rem;
+    font-size: 60px;
+    font-size: 3rem;
     margin: 0;
   }
 
@@ -1285,7 +1285,7 @@ footer p {
     padding: 50px 50px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .mainHeader .textContainer h1 {
     font-size: 35px;
     font-size: 1.75rem;

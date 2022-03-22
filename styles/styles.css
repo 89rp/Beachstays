@@ -1028,25 +1028,6 @@ footer p {
 .contactHeader {
     height: 600px;
   }
-  .mainHeader .wrapper .hamburger,
-.blogHeader .wrapper .hamburger,
-.contactHeader .wrapper .hamburger {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .mainHeader .wrapper nav ul,
-.blogHeader .wrapper nav ul,
-.contactHeader .wrapper nav ul {
-    display: none;
-  }
 
   nav p {
     font-size: 25px;
@@ -1258,6 +1239,31 @@ footer p {
     font-size: 65px;
     font-size: 3.25rem;
     margin: 0;
+  }
+
+  .mainHeader,
+.blogHeader,
+.contactHeader {
+    height: 600px;
+  }
+  .mainHeader .wrapper .hamburger,
+.blogHeader .wrapper .hamburger,
+.contactHeader .wrapper .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainHeader .wrapper nav ul,
+.blogHeader .wrapper nav ul,
+.contactHeader .wrapper nav ul {
+    display: none;
   }
 
   .contest .flexContainer {

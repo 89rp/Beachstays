@@ -48,19 +48,19 @@
 
         height: 600px;
 
-        .wrapper {
-            .hamburger {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
+        // .wrapper {
+        //     .hamburger {
+        //         display: flex;
+        //         flex-direction: column;
+        //         justify-content: center;
+        //     }
             
-            nav {
-                ul {
-                    display: none
-                }
-            }
-        }
+        //     nav {
+        //         ul {
+        //             display: none
+        //         }
+        //     }
+        // }
     }
 
 
@@ -294,6 +294,27 @@
             span {
                 @include fontSize(65);
                 margin: 0;
+            }
+        }
+    }
+
+    .mainHeader, 
+    .blogHeader, 
+    .contactHeader {
+
+        height: 600px;
+
+        .wrapper {
+            .hamburger {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            nav {
+                ul {
+                    display: none
+                }
             }
         }
     }

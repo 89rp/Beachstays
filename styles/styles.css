@@ -1008,6 +1008,11 @@ footer p {
     bottom: -80px;
   }
 }
+@media (max-height: 840px) {
+  .contactHeader .wrapper h1 {
+    top: 180px;
+  }
+}
 @media (max-width: 1050px) {
   .mainHeader .textContainer {
     width: 100%;

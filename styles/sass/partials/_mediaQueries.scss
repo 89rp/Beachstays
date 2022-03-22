@@ -22,6 +22,19 @@
     }
 }
 
+// added to adjust for smaller browser windows on desktop
+
+@media (max-height: 840px) {
+    .contactHeader {
+        .wrapper {
+
+            h1 {
+                top: 180px;
+            }
+        }
+    }
+}
+
 @media (max-width: 1050px) {
     .mainHeader {
 

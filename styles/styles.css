@@ -400,6 +400,8 @@ ul {
 }
 .wrapper .hamburger {
   display: none;
+  border: none;
+  background: none;
 }
 .wrapper .hamburger .bar {
   display: block;

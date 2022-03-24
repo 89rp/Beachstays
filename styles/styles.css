@@ -1237,7 +1237,7 @@ footer p {
     margin-bottom: 50px;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   .mainHeader .textContainer h1 {
     font-size: 35px;
     font-size: 1.75rem;
@@ -1266,11 +1266,34 @@ footer p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    cursor: pointer;
+    z-index: 3;
   }
   .mainHeader .wrapper nav ul,
 .blogHeader .wrapper nav ul,
 .contactHeader .wrapper nav ul {
-    display: none;
+    position: fixed;
+    top: 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 85%;
+    background: rgba(6, 57, 116, 0.9);
+    z-index: 2;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .mainHeader .wrapper nav ul li,
+.blogHeader .wrapper nav ul li,
+.contactHeader .wrapper nav ul li {
+    margin: 20px;
+  }
+  .mainHeader .wrapper nav ul a,
+.blogHeader .wrapper nav ul a,
+.contactHeader .wrapper nav ul a {
+    margin-left: 0;
+    padding: 20px 100px;
   }
 
   .contest .flexContainer {

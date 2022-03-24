@@ -27,7 +27,6 @@
 @media (max-height: 840px) {
     .contactHeader {
         .wrapper {
-
             h1 {
                 top: 180px;
             }
@@ -37,7 +36,6 @@
 
 @media (max-width: 1050px) {
     .mainHeader {
-
         .textContainer {
             width: 100%;
             position: relative;
@@ -55,14 +53,11 @@
         }
     }
 
-    .mainHeader, 
-    .blogHeader, 
+    .mainHeader,
+    .blogHeader,
     .contactHeader {
-
         height: 600px;
-
     }
-
 
     nav {
         p {
@@ -285,7 +280,7 @@
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
     .mainHeader {
         .textContainer {
             h1 {
@@ -298,10 +293,9 @@
         }
     }
 
-    .mainHeader, 
-    .blogHeader, 
+    .mainHeader,
+    .blogHeader,
     .contactHeader {
-
         height: 600px;
 
         .wrapper {
@@ -309,11 +303,30 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                cursor: pointer;
+                z-index: 3;
             }
-            
+
             nav {
+
                 ul {
-                    display: none
+                    position: fixed;
+                    // left: -100%;
+                    top: 80px;
+                    flex-direction: column;
+                    width: 85%;
+                    background: rgba(6, 57, 116, 0.9);
+                    z-index: 2;
+                    transition: 0.3s;
+
+                    li {
+                        margin: 20px;
+                    }
+
+                    a {
+                        margin-left: 0;
+                        padding: 20px 100px;
+                    }
                 }
             }
         }

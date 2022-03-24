@@ -18,7 +18,7 @@ ul {
     margin: 0;
 }
 
-button {
+.button {
     @include font($playFair, 900, $iceBlue);
     @include lineLetter(32px, 1px);
     background-color: $twilightBlue;

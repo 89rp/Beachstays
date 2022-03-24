@@ -299,6 +299,7 @@
         height: 600px;
 
         .wrapper {
+            
             .hamburger {
                 display: flex;
                 flex-direction: column;
@@ -308,10 +309,14 @@
             }
 
             nav {
+                
+                .navList.active{
+                        left: 0;
+                    }
 
                 ul {
                     position: fixed;
-                    // left: -100%;
+                    left: -100%;
                     top: 80px;
                     flex-direction: column;
                     width: 85%;

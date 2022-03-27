@@ -304,8 +304,10 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                border: none;
+                background: none;
                 cursor: pointer;
-                z-index: 3;
+                // z-index: 3;
             }
 
             nav {

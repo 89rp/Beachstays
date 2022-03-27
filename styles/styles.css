@@ -400,8 +400,6 @@ ul {
 }
 .wrapper .hamburger {
   display: none;
-  border: none;
-  background: none;
 }
 .wrapper .hamburger .bar {
   display: block;
@@ -1266,8 +1264,9 @@ footer p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    border: none;
+    background: none;
     cursor: pointer;
-    z-index: 3;
   }
   .mainHeader .wrapper nav .navList.active,
 .blogHeader .wrapper nav .navList.active,
